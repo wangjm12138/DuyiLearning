@@ -60,6 +60,7 @@
     display: none;
     border-top: none;
     z-index: 50;
+    background-color: #fff;
 }
 
 .topnav-car:hover .topnav-detail {
@@ -68,4 +69,5 @@
 
 .topnav-car:hover .topnav-link {
     background: #fff;
+    color: #ff6700;
 }
