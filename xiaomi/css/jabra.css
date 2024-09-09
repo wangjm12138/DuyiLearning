@@ -1,0 +1,429 @@
+@font-face {
+    font-family: 'jbr-icons';
+    src:  
+      url('../font/jbr-icons-ttf.ttf') format('truetype'),
+      url('../font/jbr-icons-woff.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"]::before, [class*=" icon-"]::before {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'jbr-icons' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  
+  .icon-leaflet:before {
+    content: "\e985";
+  }
+  .icon-pause:before {
+    content: "\e984";
+  }
+  .icon-in-1:before {
+    content: "\e900";
+  }
+  .icon-degrees:before {
+    content: "\e901";
+  }
+  .icon-active-noise-cancelling:before {
+    content: "\e902";
+  }
+  .icon-add:before {
+    content: "\e903";
+  }
+  .icon-adjustable-anc:before {
+    content: "\e904";
+  }
+  .icon-alert:before {
+    content: "\e905";
+  }
+  .icon-anti-counterfeiting:before {
+    content: "\e906";
+  }
+  .icon-arrow-back:before {
+    content: "\e907";
+  }
+  .icon-arrow-down:before {
+    content: "\e908";
+  }
+  .icon-arrow-forward:before {
+    content: "\e909";
+  }
+  .icon-arrow-square:before {
+    content: "\e90a";
+  }
+  .icon-arrow-up:before {
+    content: "\e90b";
+  }
+  .icon-basket:before {
+    content: "\e90c";
+  }
+  .icon-battery:before {
+    content: "\e90d";
+  }
+  .icon-battery-full:before {
+    content: "\e90e";
+  }
+  .icon-battery-low:before {
+    content: "\e90f";
+  }
+  .icon-beat:before {
+    content: "\e910";
+  }
+  .icon-bluetooth:before {
+    content: "\e911";
+  }
+  .icon-bluetooth-device:before {
+    content: "\e912";
+  }
+  .icon-bluetooth-logo:before {
+    content: "\e913";
+  }
+  .icon-briefcase:before {
+    content: "\e914";
+  }
+  .icon-busylight:before {
+    content: "\e915";
+  }
+  .icon-calendar:before {
+    content: "\e916";
+  }
+  .icon-call-performance:before {
+    content: "\e917";
+  }
+  .icon-camera:before {
+    content: "\e918";
+  }
+  .icon-car:before {
+    content: "\e919";
+  }
+  .icon-checkmark:before {
+    content: "\e91a";
+  }
+  .icon-chevron-down:before {
+    content: "\e91b";
+  }
+  .icon-chevron-left:before {
+    content: "\e91c";
+  }
+  .icon-chevron-right:before {
+    content: "\e91d";
+  }
+  .icon-chevron-up:before {
+    content: "\e91e";
+  }
+  .icon-clock:before {
+    content: "\e91f";
+  }
+  .icon-close:before {
+    content: "\e920";
+  }
+  .icon-cloud-library:before {
+    content: "\e921";
+  }
+  .icon-compare:before {
+    content: "\e922";
+  }
+  .icon-conversations:before {
+    content: "\e923";
+  }
+  .icon-customer-client-relationships:before {
+    content: "\e924";
+  }
+  .icon-customer-services:before {
+    content: "\e925";
+  }
+  .icon-customizable:before {
+    content: "\e926";
+  }
+  .icon-desk-space:before {
+    content: "\e927";
+  }
+  .icon-digital-meeting-room:before {
+    content: "\e928";
+  }
+  .icon-discount:before {
+    content: "\e929";
+  }
+  .icon-distribution:before {
+    content: "\e92a";
+  }
+  .icon-download:before {
+    content: "\e92b";
+  }
+  .icon-earbuds:before {
+    content: "\e92c";
+  }
+  .icon-earbuds-wired:before {
+    content: "\e92d";
+  }
+  .icon-ear-fit:before {
+    content: "\e92e";
+  }
+  .icon-ear-heart:before {
+    content: "\e92f";
+  }
+  .icon-ear-no-device:before {
+    content: "\e930";
+  }
+  .icon-ear-noise-cancelling:before {
+    content: "\e931";
+  }
+  .icon-ear-shake-grip:before {
+    content: "\e932";
+  }
+  .icon-ear-wind:before {
+    content: "\e933";
+  }
+  .icon-end-of-life:before {
+    content: "\e934";
+  }
+  .icon-engraving:before {
+    content: "\e935";
+  }
+  .icon-engraving-simplified:before {
+    content: "\e936";
+  }
+  .icon-environment:before {
+    content: "\e937";
+  }
+  .icon-google-fastpair:before {
+    content: "\e938";
+  }
+  .icon-handset:before {
+    content: "\e939";
+  }
+  .icon-handset-checkmark:before {
+    content: "\e93a";
+  }
+  .icon-handset-cross:before {
+    content: "\e93b";
+  }
+  .icon-handset-hangup:before {
+    content: "\e93c";
+  }
+  .icon-handset-incoming-call:before {
+    content: "\e93d";
+  }
+  .icon-handset-music:before {
+    content: "\e93e";
+  }
+  .icon-handset-sound:before {
+    content: "\e93f";
+  }
+  .icon-headset:before {
+    content: "\e940";
+  }
+  .icon-headset-arm:before {
+    content: "\e941";
+  }
+  .icon-headset-over-ear:before {
+    content: "\e942";
+  }
+  .icon-heartbeat:before {
+    content: "\e943";
+  }
+  .icon-hear-through:before {
+    content: "\e944";
+  }
+  .icon-home:before {
+    content: "\e945";
+  }
+  .icon-home-and-office:before {
+    content: "\e946";
+  }
+  .icon-hotline:before {
+    content: "\e947";
+  }
+  .icon-indicator-off:before {
+    content: "\e948";
+  }
+  .icon-indicator-on:before {
+    content: "\e949";
+  }
+  .icon-in-office-video-meeting:before {
+    content: "\e94a";
+  }
+  .icon-laptop:before {
+    content: "\e94b";
+  }
+  .icon-laptop-and-mobile:before {
+    content: "\e94c";
+  }
+  .icon-lightweight:before {
+    content: "\e94d";
+  }
+  .icon-link:before {
+    content: "\e94e";
+  }
+  .icon-manufacturing:before {
+    content: "\e94f";
+  }
+  .icon-menu:before {
+    content: "\e950";
+  }
+  .icon-microchip:before {
+    content: "\e951";
+  }
+  .icon-microchip-2x:before {
+    content: "\e952";
+  }
+  .icon-microphone:before {
+    content: "\e953";
+  }
+  .icon-microphone-off:before {
+    content: "\e954";
+  }
+  .icon-mobile-phone:before {
+    content: "\e955";
+  }
+  .icon-office-buildings:before {
+    content: "\e956";
+  }
+  .icon-organizational-technology:before {
+    content: "\e957";
+  }
+  .icon-pairing:before {
+    content: "\e958";
+  }
+  .icon-play:before {
+    content: "\e959";
+  }
+  .icon-play-pause:before {
+    content: "\e95a";
+  }
+  .icon-plug-play:before {
+    content: "\e95b";
+  }
+  .icon-push-button:before {
+    content: "\e95c";
+  }
+  .icon-range:before {
+    content: "\e95d";
+  }
+  .icon-resources:before {
+    content: "\e95e";
+  }
+  .icon-returns:before {
+    content: "\e95f";
+  }
+  .icon-running:before {
+    content: "\e960";
+  }
+  .icon-running-cog:before {
+    content: "\e961";
+  }
+  .icon-running-stopwatch:before {
+    content: "\e962";
+  }
+  .icon-search:before {
+    content: "\e963";
+  }
+  .icon-security:before {
+    content: "\e964";
+  }
+  .icon-setup-plug-and-play:before {
+    content: "\e965";
+  }
+  .icon-shipping:before {
+    content: "\e966";
+  }
+  .icon-social-barriers:before {
+    content: "\e967";
+  }
+  .icon-social-facebook:before {
+    content: "\e968";
+  }
+  .icon-social-instagram:before {
+    content: "\e969";
+  }
+  .icon-social-linkedin:before {
+    content: "\e96a";
+  }
+  .icon-social-twitter:before {
+    content: "\e96b";
+  }
+  .icon-sound:before {
+    content: "\e96c";
+  }
+  .icon-sound-down:before {
+    content: "\e96d";
+  }
+  .icon-sound-off:before {
+    content: "\e96e";
+  }
+  .icon-sound-up:before {
+    content: "\e96f";
+  }
+  .icon-sound-wave:before {
+    content: "\e970";
+  }
+  .icon-speech-bubble:before {
+    content: "\e971";
+  }
+  .icon-speech-bubble-person:before {
+    content: "\e972";
+  }
+  .icon-star:before {
+    content: "\e973";
+  }
+  .icon-star-filled:before {
+    content: "\e974";
+  }
+  .icon-stopwatch:before {
+    content: "\e975";
+  }
+  .icon-subtract:before {
+    content: "\e976";
+  }
+  .icon-sweatproof:before {
+    content: "\e977";
+  }
+  .icon-tablet:before {
+    content: "\e978";
+  }
+  .icon-tech-ecosystem:before {
+    content: "\e979";
+  }
+  .icon-track-forward:before {
+    content: "\e97a";
+  }
+  .icon-track-reverse:before {
+    content: "\e97b";
+  }
+  .icon-train:before {
+    content: "\e97c";
+  }
+  .icon-usb-charging-cable:before {
+    content: "\e97d";
+  }
+  .icon-user-profile:before {
+    content: "\e97e";
+  }
+  .icon-virtual-meeting:before {
+    content: "\e97f";
+  }
+  .icon-warranty:before {
+    content: "\e980";
+  }
+  .icon-waterproof:before {
+    content: "\e981";
+  }
+  .icon-wireless-charging:before {
+    content: "\e982";
+  }
+  .icon-wireless-connection:before {
+    content: "\e983";
+  }
+  
