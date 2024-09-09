@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+*::before, *::after {
+    box-sizing: border-box;
+}
+
+video {
+    object-fit: contain;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.fl{
+    float: left;
+}
+
+.fr{
+    float: right;
+}
+
+.clearfix:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: #ff6700;
+}
+
+html {
+    color: #333;
+    min-width: 1226px;
+    font: 14px/1.5 'Helvetica Neue', Helvetica, Arial, 'Microsoft Yahei',
+      'Hiragino Sans GB', 'Heiti SC', 'WenQuanYi Micro Hei', sans-serif;
+}
+
+.container {
+    min-width: 1226px;
+}
+
+/* 导航栏 */
+.topnav{
+    height: 60px;
+    color: #000;
+    font-size: 18.4px;
+}
+
+.topnav-menu {
+    color: #000;
+
+}
+
+.topnav-menu .topnav-menu-logo {
+    width: 115px;
+    height: 40px;
+    background: url('../svg/jabra.svg') no-repeat;
+    display: block;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.topnav-menu .topnav-menu-message{
+    display: block;
+}
+.topnav-menu-message .iconfont{
+    font-size: 30px;
+    
+}
+
+.main-content {
+    position: relative;
+    min-height: 750px;
+}
+
+.topbanner {
+    margin-left: 10px;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.top-banner-intro {
+    position: absolute;
+    top: 40%;
+    z-index: 3;
+    margin-left: 10px;
+    font-weight: 600;
+    color: #fff;
+    width: 100%;
+}
+
+.top-banner-tagline{
+    font-size: clamp(4rem, .8155rem + 9.3204vw, 5rem);
+    text-align: center;
+}
