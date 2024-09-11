@@ -192,15 +192,20 @@ html {
     width: 546px;
     display: inline-block;
     height: 44px;
-    background: red;
+    /* background: red; */
     text-align: start;
 }
 
 .search-input-wrap .search-input {
     display: inline-block;
-    background: blue;
+    /* background: blue; */
     height: 16px;
     padding: 12px 16px;
     margin: 0;
     font-size: 16px;
+    box-sizing: content-box;
+    width: 443px;
+    padding-right: 87px;
+    border-radius: 10px 0 0 10px;
+    border: 2px solid #c4c7ce;
 }
