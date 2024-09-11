@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Dashboard</title>
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://at.alicdn.com/t/font_2960521_rqz39d8moo.css">
+    <link rel="stylesheet" href="./css/fontIcon.css">
     <link rel="stylesheet" href="./css/jabra.css">
     <link rel="stylesheet" href="./css/pd.css">
     <!-- <link rel="stylesheet" href="./css/topnav.css"> -->
@@ -20,7 +20,7 @@
                     </a>
                 </li>
             </ul>
-            <div class="fr">
+            <!-- <div class="fr">
                 <ui class="topnav-menu fl">
                     <li class="fl">
                         <a href="https://www.jabra.com" class="topnav-menu-message">
@@ -28,16 +28,18 @@
                         </a>
                     </li>                    
                 </ui>
-            </div>
+            </div> -->
     
         </div>
     </div>
 
     <div class="main-content">
         <div class="topbanner">
-            <video class="video-loaded" poster="./poster/Jabra-Poster.webp"  preload="none" muted="true" autoplay="true" loop="true">
-                <source src="./video/jabra.mp4" type="video/mp4"> </source>
-            </video>
+            <div class="video-area">
+                <video class="video-loaded" poster="./poster/Jabra-Poster.webp"  preload="none" muted="true" autoplay="true" loop="true" playsinline="true">
+                    <source src="./video/jabra.mp4" type="video/mp4"> </source>
+                </video>
+            </div>
         </div>
 
         <div class="top-banner-intro">
@@ -46,6 +48,28 @@
             </h1>
             <a class="top-banner-button icon-arrow-forward">Get started !</a>
         </div>
+    </div>
+
+    <!-- search -->
+    <div class="search-area">
+        <form action="">
+            <span class="search-input-wrap">
+                <input type="text" class="search-input">
+            </span>
+            <!-- <span class="search-button">
+                <button type="submit" class="search-buton"></button>
+            </span> -->
+        </form>
+    </div>
+    <!-- device showcase-->
+    
+    <div class="device-sc">
+
+    </div>
+
+    <!-- sidebar -->
+    <div class="sidebar">
+
     </div>
 </body>
 </html>
