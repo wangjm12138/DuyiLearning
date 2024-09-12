@@ -262,6 +262,14 @@ html {
     margin-top: 10px;
 }
 
+.sc-item p {
+    font-size: 16px;
+    font-weight: 600;
+    overflow: hidden;
+    white-space: nowrap;
+    padding-left: 5px;
+    text-overflow: ellipsis;
+}
 /* rm sidebar */
 .rm {
     width: 84px;
