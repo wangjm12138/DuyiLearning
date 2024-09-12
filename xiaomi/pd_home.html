@@ -54,7 +54,7 @@
     <div class="search-area">
         <form action="">
             <span class="search-input-wrap">
-                <input type="text" class="search-input">
+                <input type="text" class="search-input" id="search-device">
             </span>
             <span class="search-button-wrap">
                 <input type="submit" class="search-button" value="Go!">
@@ -330,4 +330,34 @@
         </a>
     </div>
 </body>
+<script>
+  document.getElementById('search-device').addEventListener('input', function() {
+  const keyword = this.value.toLowerCase();
+  const containers = document.querySelectorAll('.sc-container');
+
+  containers.forEach(container => {
+    const items = container.querySelectorAll('.sc-item');
+    let allHidden = true;
+
+    items.forEach(item => {
+      if (item.textContent.toLowerCase().includes(keyword)) {
+        item.classList.remove('sc-item-hide');
+        allHidden = false;
+      } else {
+        item.classList.add('sc-item-hide');
+      }
+    });
+
+    const header = container.previousElementSibling;
+    if (allHidden) {
+      header.classList.add('sc-top-hide');
+      container.classList.add('sc-container-hide');
+    } else {
+      header.classList.remove('sc-top-hide');
+    container.classList.remove('sc-container-hide');
+    }
+  })
+
+});    
+</script>
 </html>
