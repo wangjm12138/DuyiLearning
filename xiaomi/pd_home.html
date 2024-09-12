@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Dashboard</title>
-    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/PD.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/fontIcon.css">
     <link rel="stylesheet" href="./css/jabra.css">
     <link rel="stylesheet" href="./css/pd.css">
@@ -52,7 +52,7 @@
 
     <!-- search -->
     <div class="search-area">
-        <form action="">
+        <form action="" id="myForm">
             <span class="search-input-wrap">
                 <input type="text" class="search-input" id="search-device">
             </span>
@@ -90,7 +90,7 @@
                     <p class="sc-pjname">Jabra Evolve2 65 Flex</p>
                     <p class="sc-pdname">Cypress</p>
                 </a>
-                <a href="" class="sc-item fl">
+                <a href="https://www.baidu.com" class="sc-item fl">
                     <img src="./img/Jabra_Evolve2_55.png" alt="">
                     <p class="sc-pjname">Jabra Evolve2 55</p>
                     <p class="sc-pdname">Willow</p>
@@ -295,6 +295,29 @@
                 </a>
             </div>
         </div>
+        <!-- Other -->        
+        <div class="sc-top clearfix">
+            <h2 class="sc-title fl">Other</h2>
+        </div>
+        <div class="sc-container clearfix">
+            <div class="sc-item-list fl">
+                <a href="" class="sc-item fl">
+                    <img src="./img/Jabra_Panacast_50.webp" alt="">
+                    <p class="sc-pjname">xxxxx</p>
+                    <p class="sc-pdname">---</p>
+                </a>
+                <a href="" class="sc-item fl">
+                    <img src="./img/Jabra_Panacast_50.webp" alt="">
+                    <p class="sc-pjname">xxxxx</p>
+                    <p class="sc-pdname">---</p>
+                </a>
+                <a href="" class="sc-item fl">
+                    <img src="./img/Jabra_Panacast_50.webp" alt="">
+                    <p class="sc-pjname">xxxxx</p>
+                    <p class="sc-pdname">---</p>
+                </a>
+            </div>
+        </div>
     </div>
 
     <!-- 底部开始 -->
@@ -304,9 +327,15 @@
         </div>
     </div>
     <!-- 底部结束 -->
-
-
-
+    <div class='footer'>
+        <div class="footer-scroll"></div>
+        <div class="footer-horizonal"></div>
+        <div class="footer-container">
+            <img src="./img/Jabra_footer.png" alt="">
+            <br/>
+            <span class="footer-copyright">Copyright@2024 Maintain By Jackie&Angus</span>
+        </div>
+    </div>
     <!-- rm sidebar -->
     <div class="rm">
         <a href="" class="rm-item">
@@ -331,6 +360,19 @@
     </div>
 </body>
 <script>
+  function findFirstVisibleElementHref() {
+    const items = document.querySelectorAll('.sc-item');
+        // find displayed element
+        for (let i = 0; i < items.length; i++) {
+            if(!items[i].classList.contains('hidden')) {
+                const firstElementChild = items[i]
+                const href = firstElementChild.getAttribute('href');
+                return href;
+            }
+        }      
+  }
+
+    // match item
   document.getElementById('search-device').addEventListener('input', function() {
   const keyword = this.value.toLowerCase();
   const containers = document.querySelectorAll('.sc-container');
@@ -341,23 +383,43 @@
 
     items.forEach(item => {
       if (item.textContent.toLowerCase().includes(keyword)) {
-        item.classList.remove('sc-item-hide');
+        item.classList.remove('hidden');
         allHidden = false;
       } else {
-        item.classList.add('sc-item-hide');
+        item.classList.add('hidden');
       }
     });
 
     const header = container.previousElementSibling;
+    const title  = header.firstElementChild;
     if (allHidden) {
-      header.classList.add('sc-top-hide');
-      container.classList.add('sc-container-hide');
+      header.classList.add('hidden');
+      container.classList.add('hidden');
+      title.classList.add('hidden');
     } else {
-      header.classList.remove('sc-top-hide');
-    container.classList.remove('sc-container-hide');
+      header.classList.remove('hidden');
+      container.classList.remove('hidden');
+      title.classList.remove('hidden');
     }
   })
+    // find last item
+    document.getElementById('myForm').addEventListener('submit', function(event) {
+        // stop default action
+        event.preventDefault();
+        const href = findFirstVisibleElementHref();
+        window.location.href = href;
+    });
 
+    document.getElementById('myForm').addEventListener('keydown', function() {
+        if (event.key === 'Enter') {
+            // stop default action
+            event.preventDefault();
+ 
+            // find displayed element
+            const href = findFirstVisibleElementHref();
+            window.location.href = href;
+        }        
+    })
 });    
 </script>
 </html>
