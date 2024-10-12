@@ -1,0 +1,22 @@
+.container {
+    height: 40px;
+    width: 200px;
+    background-color: rgb(247, 247, 236);
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.container span {
+    padding-left: 5px;
+    padding-right: 5px;
+    border-right: solid 2px rgb(194, 186, 186);
+    color: rgb(85, 161, 231);
+    line-height: 40px;
+}
+
+.container select {
+    margin-left: 5px;
+    width: 70%;
+    border-radius: 5px;
+}
