@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg {
+    width: 100%;
+    height: 600px;
+    background-image: url(./img/banner-bg.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: grid;
+    width: 570px;
+    height: 300px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    /* margin: 100px auto; */
+    background-image: url(./img/bg.png);
+    background-size: contain;
+    gap: 5px;
+    padding: 12px;
+}
+
+.item {
+
+    background-color: #690505;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.item1 {
+    grid-area: 1/1/2/3;
+    background-image: url(./img/prize_1.png);
+    background-repeat: no-repeat;
+    background-size: auto 50px;
+    background-position: 20px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-right: 20px;
+    color: rgb(231, 231, 55);
+    font-size: 18px;
+}
+
+.item2 {
+    grid-area: 1/3/2/5;
+    background-image: url(./img/prize_2.png);
+    background-repeat: no-repeat;
+    background-size: auto 50px;
+    background-position: 20px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-right: 20px;
+    color: rgb(231, 231, 55);
+    font-size: 18px;
+}
+
+.item3 {
+    grid-area: 1/5/2/7;
+    background-image: url(./img/prize_3.png);
+    background-repeat: no-repeat;
+    background-size: auto 50px;
+    background-position: 20px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-right: 20px;
+    color: rgb(231, 231, 55);
+    font-size: 18px;
+}
+
+.item4 {
+    grid-area: 2/1/4/2;
+}
+
+.item5 {
+    grid-area: 2/2/4/6;
+}
+
+.item6 {
+    grid-area: 2/6/4/7;
+}
+
+.item7 {
+    grid-area: 4/1/5/3;
+}
+
+.item8 {
+    grid-area: 4/3/5/5;
+}
+
+.item9 {
+    grid-area: 4/5/5/7;
+}
