@@ -78,13 +78,54 @@
 
 .item4 {
     grid-area: 2/1/4/2;
+    background-image: url(./img/prize_8.png);
+    background-repeat: no-repeat;
+    background-size: auto 30px;
+    background-position: 40% 20%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-right: 20px;
+    color: rgb(231, 231, 55);
+    font-size: 18px;
+    padding-bottom: 10px;
 }
 
 .item5 {
     grid-area: 2/2/4/6;
+    display: flex;
+}
+
+.item5 .diamond {
+    flex-grow: 1;
+    background-image: url(./img/logo.png);
+    background-repeat: no-repeat;
+    background-position: 20% 50%;
+    flex-basis: 0;
+}
+
+.item5 .middle {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: yellow;
+    font-weight: 500;
+    flex-basis: 0;
+}
+
+.item5 .start {
+    flex-grow: 1;
+    background-image: url(./img/start_btn.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 30% 50%;
+    flex-basis: 0;
+    cursor: pointer
 }
 
 .item6 {
+    flex-grow: 1;
     grid-area: 2/6/4/7;
 }
 
