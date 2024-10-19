@@ -12,8 +12,10 @@ function createAnimation(options) {
         curTimes++;
         if(curTimes >= times) {
             from = to;
-            options.onend && options.onend();
             clearInterval(timer);
+            options.onmove && options.onmove(from);
+            options.onend && options.onend();
+            return;
         }
         options.onmove && options.onmove(from);
     },duration)
