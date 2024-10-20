@@ -1,0 +1,44 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+} */
+
+/* .fall-container {
+} */
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.container img {
+    position: absolute;
+    width: 220px;
+    transition: all 0.5s;
+}
+
+/* .fall-content {
+    display: flex;
+    gap: 2vw;
+    justify-content: space-between;
+} */
+
+/* .fall-column{
+    width: 230px;
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+
+/* .fall-column img{
+    width: 100%;
+    margin: 5px;
+} */
